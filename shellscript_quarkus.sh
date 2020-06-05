@@ -78,7 +78,6 @@ docker stop kata_quarkus
 git clone https://github.com/Ashwinira/quarkusRestCrudDemo.git
 
 cd quarkusRestCrudDemo
-cd application
 
 #building jar file and then docker image
 mvn clean package -Dno-native && docker build -f Dockerfile-quarkus-jvm -t rest-crud-quarkus-jvm .
