@@ -1,0 +1,72 @@
+Running 1m test @ http://localhost:8080/fruits
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    11.75ms    5.19ms  85.59ms   68.29%
+    Req/Sec    85.79     34.95   240.00     66.94%
+  5134 requests in 1.00m, 360.98KB read
+Requests/sec:     85.54
+Transfer/sec:      6.01KB
+Running 1m test @ http://localhost:8080/fruits
+  5 threads and 5 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    16.03ms   10.82ms 261.04ms   79.90%
+    Req/Sec    65.38     26.82   140.00     72.74%
+  19581 requests in 1.00m, 1.34MB read
+Requests/sec:    325.91
+Transfer/sec:     22.92KB
+Running 1m test @ http://localhost:8080/fruits
+  10 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    28.88ms   15.85ms 239.23ms   69.29%
+    Req/Sec    35.39     15.95   100.00     82.03%
+  21235 requests in 1.00m, 1.46MB read
+Requests/sec:    353.40
+Transfer/sec:     24.85KB
+Running 1m test @ http://localhost:8080/fruits
+  15 threads and 15 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    37.01ms   20.92ms 244.37ms   69.36%
+    Req/Sec    27.75     14.86    90.00     71.82%
+  24903 requests in 1.00m, 1.71MB read
+Requests/sec:    414.43
+Transfer/sec:     29.14KB
+Running 1m test @ http://localhost:8080/fruits
+  20 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    39.73ms   20.66ms 176.51ms   67.50%
+    Req/Sec    25.56     13.09    70.00     58.69%
+  30629 requests in 1.00m, 2.10MB read
+Requests/sec:    509.77
+Transfer/sec:     35.84KB
+Running 1m test @ http://localhost:8080/fruits
+  25 threads and 25 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    55.67ms   23.55ms 149.06ms   61.51%
+    Req/Sec    18.07      9.08    50.00     83.66%
+  27010 requests in 1.00m, 1.85MB read
+Requests/sec:    449.56
+Transfer/sec:     31.61KB
+Running 1m test @ http://localhost:8080/fruits
+  30 threads and 30 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    54.62ms   26.25ms 291.63ms   65.17%
+    Req/Sec    18.54      9.58    50.00     74.98%
+  33191 requests in 1.00m, 2.28MB read
+Requests/sec:    552.47
+Transfer/sec:     38.85KB
+Running 1m test @ http://localhost:8080/fruits
+  35 threads and 35 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    60.83ms   28.87ms 260.61ms   66.52%
+    Req/Sec    16.71      8.43    40.00     77.69%
+  34688 requests in 1.00m, 2.38MB read
+Requests/sec:    577.36
+Transfer/sec:     40.60KB
+Running 1m test @ http://localhost:8080/fruits
+  40 threads and 40 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    66.03ms   31.95ms 269.54ms   68.77%
+    Req/Sec    15.65      7.62    40.00     81.79%
+  36571 requests in 1.00m, 2.51MB read
+Requests/sec:    608.72
+Transfer/sec:     42.80KB
