@@ -83,7 +83,6 @@ cd quarkusRestCrudDemo
 mvn clean package -Dno-native && docker build -f Dockerfile-quarkus-jvm -t rest-crud-quarkus-jvm .
 
 cd -
-cd -
 #calling funtion to run DB container
 run_DB_container
 

@@ -22,9 +22,7 @@
   </properties>
 
   <modules>
-    <module>quarkus</module>
-    <module>quarkus-vertx</module>
-    <module>thorntail</module>
+    <module>src</module>
   </modules>
 
   <!-- Some useful things we had when inheriting from io.openshift:boost-parent (which we no longer do) -->
