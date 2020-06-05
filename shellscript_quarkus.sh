@@ -74,10 +74,12 @@ docker stop kata_quarkus
 
 }
 
+cd quarkus
 
 #building jar file and then docker image
 mvn clean package -Dno-native && docker build -f Dockerfile-quarkus-jvm -t rest-crud-quarkus-jvm .
 
+cd -
 #calling funtion to run DB container
 run_DB_container
 

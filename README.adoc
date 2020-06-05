@@ -1,11 +1,5 @@
 # Quarkus REST-Crud-HTTP demo
 
-Demo applications for https://quarkus.io/blog/RuntimePerformance/
+Edit the application properties file and then run the shellscript_quarkus.
 
-Three demo applications are available;
 
-* link:quarkus/[Quarkus - RESTEasy]
-* link:quarkus-vertx/[Quarkus - Vert.x Web]
-* link:thorntail/[Thorntail]
-
-Instructions for building and running the applications are included in each directory
