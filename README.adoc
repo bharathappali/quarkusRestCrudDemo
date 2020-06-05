@@ -1,5 +1,5 @@
 # Quarkus REST-Crud-HTTP demo
 
-Edit the application properties file and then run the shellscript_quarkus.
+Edit the application properties file by changing the ip address and then run the shellscript_quarkus.
 
 
