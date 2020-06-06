@@ -5,7 +5,7 @@
 #--------------------------------------------------------------------------------------------------------------------------------------
 
 #file to store first response time for both runc and kata
-LOG_FILE='first_response.txt'
+LOG_FILE='./logs/first_response.txt'
 
 #function to run WRK benchmark
 run_benchmark() {
@@ -49,7 +49,7 @@ sleep 30s
 docker logs runc_quarkus >> ${LOG_FILE}
 
 #calling to record runc performance
-run_benchmark "runc_benchmark_results.log"
+run_benchmark "logs/runc_benchmark_results.log"
 
 docker stop runc_quarkus
 
@@ -68,21 +68,24 @@ sleep 1m
 docker logs kata_quarkus >> ${LOG_FILE}
 
 #calling to record kata performance
-run_benchmark "kata_benchmark_results.log"
+run_benchmark "logs/kata_benchmark_results.log"
 
 docker stop kata_quarkus
 
 }
 
-#cloning git repository
-git clone https://github.com/Ashwinira/quarkusRestCrudDemo.git
+# deleting earlier logs
+rm -rf logs
 
-cd quarkusRestCrudDemo/quarkus
+# creating logs directory
+mkdir -p logs
+
+cd ./quarkus
 
 #building jar file and then docker image
 mvn clean package -Dno-native && docker build -f Dockerfile-quarkus-jvm -t rest-crud-quarkus-jvm .
 
-cd -
+cd ../
 #calling funtion to run DB container
 run_DB_container
 
